@@ -58,8 +58,8 @@ export function calculateCoffeePrice(size, type, extras = {}) {
   // else if ( type == "mocha") cost+=2.00; 
   // else return -1;
 
-  if ( extras.extraShot ) cost+=0.75;
-  if ( extras.whippedCream) cost += 0.50;
+  if ( extras?.extraShot ) cost+=0.75;
+  if ( extras?.whippedCream) cost += 0.50;
 
   return cost;
 }
